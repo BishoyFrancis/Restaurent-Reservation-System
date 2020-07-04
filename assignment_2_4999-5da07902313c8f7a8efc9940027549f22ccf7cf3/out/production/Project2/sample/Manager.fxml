@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ManagerController">
+   <children>
+      <Button layoutX="326.0" layoutY="628.0" mnemonicParsing="false" onAction="#LogoutButton" prefHeight="45.0" prefWidth="99.0" text="Logout">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="list" layoutX="15.0" layoutY="14.0" prefHeight="607.0" prefWidth="720.0">
+         <columns>
+            <TableColumn prefWidth="110.0" text="Customer Name">
+               <cellValueFactory>
+                  <PropertyValueFactory property="clientName" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="228.0" text="Dishes">
+               <cellValueFactory>
+                  <PropertyValueFactory property="dishes" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="128.0" text="Table #">
+            <cellValueFactory>
+               <PropertyValueFactory property="number" />
+            </cellValueFactory>
+         </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="102.0" text="Amount">
+               <cellValueFactory>
+                  <PropertyValueFactory property="TotalPrice" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="151.0" text="Time">
+               <cellValueFactory>
+                  <PropertyValueFactory property="time" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

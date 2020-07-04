@@ -1,0 +1,53 @@
+.root {
+    -fx-background-image: url("italian-cuisine-2378729_1920.jpg")
+}
+
+#LoginPane {
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 5;
+    -fx-border-radius: 20;
+
+}
+
+#password{
+    -fx-border-color: white;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #70FF9B;
+}
+#password:pressed {
+    -fx-scale-x: 1.5;
+    -fx-scale-y:1.5 ;
+    -fx-border-color: yellow;
+
+}
+#username{
+    -fx-border-color: white;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #70FF9B;
+}
+
+#username:pressed {
+    -fx-scale-x: 1.5;
+    -fx-scale-y:1.5 ;
+    -fx-border-color: yellow;
+
+}
+#LoginButton:hover {
+    -fx-background-color: #383838;
+    -fx-scale-y: 1.1;
+}
+
+#LoginButton:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+#signinlabel{
+    -fx-background-color: white;
+    -fx-border-width: 3;
+    -fx-background-radius: 20;
+
+}
+
